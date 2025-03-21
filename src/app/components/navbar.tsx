@@ -9,7 +9,7 @@ const Navbar = async () => {
   return (
     <header className="px-5 py-3 bg-white shadow-sm ">
       <nav className="flex justify-between items-center">
-        <Link href={"/"}>
+        <Link href="/">
           <Image
             src={"/logo.png"}
             alt="YC Directory Logo"
