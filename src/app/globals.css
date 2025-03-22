@@ -45,6 +45,9 @@
 @utility search-input {
   @apply flex-1 font-bold placeholder:font-semibold placeholder:text-black-100 w-full h-auto outline-none;
 }
+@utility search-btn {
+  @apply size-[50px] rounded-full bg-black flex justify-center items-center;
+}
 
 :root {
   --radius: 0.625rem;

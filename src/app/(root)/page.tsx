@@ -1,7 +1,13 @@
 import React from "react";
-import SearchForm from "../components/search-form";
+import SearchForm from "../../components/search-form";
 
-const HomePage = () => {
+const HomePage = async ({
+  searchParams,
+}: {
+  searchParams: Promise<{ query?: string }>;
+}) => {
+  const { query } = await searchParams;
+
   return (
     <>
       <section className="pink-container ">
@@ -13,7 +19,7 @@ const HomePage = () => {
           Submit Ideas, Vote on Pitches, and Get Noticed in Virtual
           Competitions.
         </p>
-        <SearchForm />
+        <SearchForm query={query} />
       </section>
     </>
   );
