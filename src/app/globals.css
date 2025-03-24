@@ -88,6 +88,30 @@
 @utility startup-card_btn {
   @apply rounded-full bg-black-200 font-medium text-[16px] text-white px-5 py-3;
 }
+@utility tag-tri {
+  @apply before:content-[''] before:absolute before:top-2 before:left-2 before:border-t-[10px] before:border-t-black before:border-r-[10px] before:border-r-transparent after:content-[''] after:absolute after:bottom-2 after:right-2 after:border-b-[10px] after:border-b-black after:border-l-[10px] after:border-l-transparent;
+}
+@utility tag {
+  @apply bg-secondary-500 px-6 py-3 font-work-sans font-bold rounded-sm uppercase relative tag-tri;
+}
+@utility text-20-medium {
+  @apply font-medium text-[20px] text-black;
+}
+@utility category-tag {
+  @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-full;
+}
+@utility divider {
+  @apply border-dotted bg-zinc-400 max-w-4xl my-10 mx-auto;
+}
+@utility view_skeleton {
+  @apply bg-zinc-400 h-10 w-24 rounded-lg fixed bottom-3 right-3;
+}
+@utility view-container {
+  @apply flex justify-end items-center mt-5 fixed bottom-3 right-3;
+}
+@utility view-text {
+  @apply font-medium text-[16px] bg-primary-100 px-4 py-2 rounded-lg capitalize;
+}
 
 :root {
   --radius: 0.625rem;
