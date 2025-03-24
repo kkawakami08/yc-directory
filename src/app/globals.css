@@ -86,7 +86,7 @@
   @apply w-full h-[164px] rounded-[10px] object-cover;
 }
 @utility startup-card_btn {
-  @apply rounded-full bg-black-200 font-medium text-[16px] text-white px-5 py-3 !important;
+  @apply rounded-full bg-black-200 font-medium text-[16px] text-white px-5 py-3;
 }
 
 :root {
