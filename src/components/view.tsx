@@ -28,7 +28,7 @@ const View = async ({ id }: ViewProps) => {
         <Ping />
       </div>
       <p className="view-text">
-        <span className="font-black">Views: {totalViews}</span>
+        <span className="font-black">Views: {totalViews || 0}</span>
       </p>
     </div>
   );
